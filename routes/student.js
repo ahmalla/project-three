@@ -14,3 +14,13 @@ router.route('/create-student').post((req, res, next) => {
         }
     })
 })
+// Read students 
+router.route('/').get((req, res) => {
+    studentSchema.find((error, data) => {
+      if (error) {
+        return next(error)
+      } else {
+        res.json(data)
+      }
+    })
+  })
