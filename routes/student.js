@@ -24,3 +24,15 @@ router.route('/').get((req, res) => {
       }
     })
   })
+
+// Get a Single Student
+router.route('/edit-student/:id').get((req, res) => {
+    studentSchema.findById(req.params.id, (error, data) => {
+      if (error) {
+        return next(error)
+      } else {
+        res.json(data)
+      }
+    })
+  })
+  
