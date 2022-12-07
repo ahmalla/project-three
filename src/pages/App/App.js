@@ -1,16 +1,14 @@
-import  Nav  from "react-bootstrap";
-import  Navbar  from "react-bootstrap";
+import Nav from "react-bootstrap";
+import Navbar from "react-bootstrap";
 import Container from "react-bootstrap";
 import Row from "react-bootstrap";
 import Col from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.css"
-import './App.css';
+import "bootstrap/dist/css/bootstrap.css";
+import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import CreateStudent from "../../components/create-student";
 import EditStudent from "../../components/edit-student";
 import StudentList from "../../components/student-list";
-
-
 
 function App() {
   return (
@@ -20,18 +18,18 @@ function App() {
           <Navbar bg="dark" variant="dark">
             <Container>
               <Navbar.Brand>
-                <Link to={'/create-student'} className="nav-link">
+                <Link to={"/create-student"} className="nav-link">
                   StudentTracker
                 </Link>
               </Navbar.Brand>
               <Nav className="justify-content-end">
                 <Nav>
-                  <Link to={'/create-student'} className="nav-link">
+                  <Link to={"/create-student"} className="nav-link">
                     Create Student
                   </Link>
                 </Nav>
                 <Nav>
-                  <Link to={'/student-list'} className="nav-link">
+                  <Link to={"/student-list"} className="nav-link">
                     Student List
                   </Link>
                 </Nav>
@@ -71,6 +69,6 @@ function App() {
         </Container>
       </Router>
     </div>
-  )
+  );
 }
-export default App
+export default App;
