@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Component } from "react";
 import { Button } from "react-bootstrap";
 
 export default class StudentTableRow extends Component {
