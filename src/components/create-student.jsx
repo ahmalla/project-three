@@ -1,8 +1,12 @@
 import { Component } from "react";
-import Form from "react-bootstrap";
-import Button from "react-bootstrap";
+import { Form } from "react-bootstrap";
+import { Button } from "react-bootstrap";
+import axios from "axios";
 
 export default class CreateStudent extends Component {
+    constructor(props) {
+        
+    }
   render() {
     return (
       <div class="form-wrapper">
